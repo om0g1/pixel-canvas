@@ -1,17 +1,9 @@
 import React from "react";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return (
         <div id="sidebar">
-            <ul>
-                <li><a href="#">Pen</a></li>
-                <li><a href="#">Pen</a></li>
-                <li><a href="#">Pen</a></li>
-                <li><a href="#">Pen</a></li>
-                <li><a href="#">Pen</a></li>
-                <li><a href="#">Pen</a></li>
-                <li><a href="#">Pen</a></li>
-            </ul>
+            {props.children}
         </div>
     )
 }

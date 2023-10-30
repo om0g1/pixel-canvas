@@ -28,13 +28,16 @@ body {
 
 .App {
   display: grid;
-  grid-template-rows: 7vh 86vh 7vh;
+  grid-template-rows: 6vh 88vh 6vh;
 }
 
 #navbar {
   padding: 0.5rem;
   background-color: #333333;
   border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #navbar ul{
@@ -65,9 +68,18 @@ body {
   background-color: #141414;
 }
 
-canvas {
+#canvas-wrapper> canvas {
   position: absolute;
-  background-color: grey;
+  z-index: 1;
+}
+
+#canvas {
+  background-color: white;
+}
+
+#grid {
+  z-index: 2;
+  pointer-events: none;
 }
 
 #footer {

@@ -1,13 +1,14 @@
 import React from "react";
-import Sidebar from "./Sidebar";
+import LeftBar from "./LeftBar";
 import CanvasWrapper from "./CanvasWrapper";
+import RightBar from "./RightBar";
 
 const WorkingArea = () => {
     return (
         <div id="working-area">
-            <Sidebar />
+            <LeftBar />
             <CanvasWrapper />
-            <Sidebar />
+            <RightBar />
         </div>
     )
 }
